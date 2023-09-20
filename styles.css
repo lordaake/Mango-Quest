@@ -1112,6 +1112,10 @@ header {
 
 @media (max-width: 1024px) {
 
+    .footer-container {
+        display: block;
+    }
+
     .main-mangoquest {
         flex-wrap: wrap;
     }
@@ -1170,10 +1174,6 @@ header {
 }
 
 @media (max-width: 768px) {
-
-    .footer-container {
-        display: block;
-    }
 
     .social-media {
         flex-direction: column;
