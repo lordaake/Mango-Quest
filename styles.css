@@ -230,7 +230,6 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 38rem;
     width: 95%;
     cursor: pointer;
     transition: box-shadow 0.5s ease, filter 1s ease;
@@ -1111,6 +1110,14 @@ header {
 
 
 @media (max-width: 1024px) {
+
+    .heading-and-image {
+        max-width: 50rem;
+    }
+
+    .heading-introduction {
+        max-width: 45rem;
+    }
 
     .footer-container {
         display: block;
