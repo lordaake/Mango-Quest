@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>About Mango Quest</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css-reset.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="contact-body">
+    <header id="main-header">
+        <nav class="nav-bar">
+            <div class="nav-group nav-group-left">
+                <ul class="navigation-ul">
+                    <li class="navlink-li"><a href="index.html">Home</a></li>
+                    <li class="navlink-li navlink-li-about"><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="nav-group nav-group-center">
+                <ul class="navigation-ul">
+                    <li class="logo-images">
+                        <a href="index.html"><img src="images/mango_logo1.png" alt="Mango Logo" class="mango-logo"></a>
+                        <a href="index.html"><img src="images/Mangoquest_title_Original.png" alt="Mango Quest Logo text"
+                                class="mango-title"></a>
+                        <button id="menu-toggle" class="menu-toggle"><i class="fas fa-bars"></i></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-group nav-group-right">
+                <ul class="navigation-ul">
+                    <li class="navlink-li navlink-li-allposts"><a href="allposts.html">All Posts</a></li>
+                    <li class="navlink-li"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <div class="menu-container">
+                <div class="menu-item">
+                    <a href="index.html"><span class="menu-text">Home</span></a>
+                </div>
+                <div class="menu-item">
+                    <a href="about.html"><span class="menu-text">About</span></a>
+                </div>
+                <div class="menu-item">
+                    <a href="allposts.html"><span class="menu-text">All Posts</span></a>
+                </div>
+                <div class="menu-item">
+                    <a href="contact.html"><span class="menu-text">Contact</span></a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+
+
+    <main>
+        <section class="mango-quest-section">
+            <div class="mango-image-wrapper">
+                <img class="mango-team-image" src="/images/Contact_us.png" alt="Team Image" />
+            </div>
+            <div class="mango-description">
+                Have you heard whispers of elusive mango varieties tucked away in hidden corners of the world? Do you
+                know of a local mango spot that we absolutely must visit? Or perhaps you simply have questions about our
+                exotic quests? We'd love to hear from you!
+
+                Sometimes, the thrill of the hunt is too great to keep to ourselves. If the allure of mango hunting tugs
+                at your adventurous spirit, let us know. We occasionally invite an extra member to join us on our
+                expeditions, offering a taste of the Mango Quest experience.
+
+                Don't hesitate to reach out. Your tip could be the next big adventure we embark upon, and your questions
+                are always welcome. Use the form below to contact us, and let's embark on the ultimate mango quest
+                together!
+                Feel free to reach out via [email], [social media links], or through the contact form below. We can't
+                wait to hear from you!
+            </div>
+            <div class="contact-form-section">
+                <h2 class="contact-h2">Contact us:</h2>
+                <form id="contact-form">
+                    <div class="form-field">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="input-box">
+                        <span id="name-error" class="error-text"></span>
+                    </div>
+                    <div class="form-field">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="input-box">
+                        <span id="email-error" class="error-text"></span>
+                    </div>
+                    <div class="form-field">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" id="subject" name="subject" class="input-box">
+                        <span id="subject-error" class="error-text"></span>
+                    </div>
+                    <div class="form-field">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="message-box"></textarea>
+                        <span id="message-error" class="error-text"></span>
+                    </div>
+                    <button type="submit" class="submit-button">Submit</button>
+                </form>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-section about-copyright">
+                <div class="adventures-button">
+                    <a href="#" class="see-all-link">See all our Adventures</a>
+                </div>
+                <div class="copyright">
+                    &copy; 2023 Mango Quest. All Rights Reserved
+                </div>
+            </div>
+            <div class="footer-section social-media">
+                <div class="follow-us-text">Follow us:</div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/js/Contact.js"></script>
+    <script type="module" src="/js/MobileMenu.js"></script>
+</body>
+
+</html>

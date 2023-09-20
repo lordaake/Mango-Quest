@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mango Quest</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css-reset.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="blog-post-body">
+    <header id="main-header">
+        <nav class="nav-bar">
+            <div class="nav-group nav-group-left">
+                <ul class="navigation-ul">
+                    <li class="navlink-li"><a href="index.html">Home</a></li>
+                    <li class="navlink-li navlink-li-about"><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="nav-group nav-group-center">
+                <ul class="navigation-ul">
+                    <li class="logo-images">
+                        <a href="index.html"><img src="images/mango_logo1.png" alt="Mango Logo" class="mango-logo"></a>
+                        <a href="index.html"><img src="images/Mangoquest_title_Original.png" alt="Mango Quest Logo text"
+                                class="mango-title"></a>
+                        <button id="menu-toggle" class="menu-toggle"><i class="fas fa-bars"></i></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-group nav-group-right">
+                <ul class="navigation-ul">
+                    <li class="navlink-li navlink-li-allposts"><a href="allposts.html">All Posts</a></li>
+                    <li class="navlink-li"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <div class="menu-container">
+                <div class="menu-item">
+                    <a href="index.html"><span class="menu-text">Home</span></a>
+                </div>
+                <div class="menu-item">
+                    <a href="about.html"><span class="menu-text">About</span></a>
+                </div>
+                <div class="menu-item">
+                    <a href="allposts.html"><span class="menu-text">All Posts</span></a>
+                </div>
+                <div class="menu-item">
+                    <a href="contact.html"><span class="menu-text">Contact</span></a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+
+    <main>
+        <section class="blog-post">
+        </section>
+        <div class="modal" id="imageModal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImage">
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-section about-copyright">
+                <div class="adventures-button">
+                    <a href="#" class="see-all-link">See all our Adventures</a>
+                </div>
+            </div>
+            <div class="footer-section social-media">
+                <div class="follow-us-text">Follow us:</div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 Mango Quest. All Rights Reserved
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="js/blog-post.js"></script>
+    <script type="module" src="/js/MobileMenu.js"></script>
+</body>
+
+</html>
