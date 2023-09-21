@@ -115,8 +115,6 @@ async function initialize() {
     if (window.innerWidth > 1024) {
       headingIntroduction.style.animation = 'bounceRight 0.5s ease-out forwards';
       increaseFontSize();
-    } else if (window.innerWidth <= 1024) {
-      increaseFontSize();
     }
   });
 

@@ -732,6 +732,7 @@ header {
     font-size: 1.875rem;
     font-family: "Finger Paint", sans-serif;
     align-self: center;
+    text-align: center;
 }
 
 .adventurer-bio {
@@ -1051,6 +1052,7 @@ h3,
 h4 {
     font-size: 1.5rem;
     padding-bottom: 1%;
+    text-align: center;
 }
 
 .post-content p {
@@ -1074,6 +1076,7 @@ h4 {
     line-height: normal;
     margin-bottom: 2%;
     width: fit-content;
+    text-align: center;
 }
 
 .blog-post img {
@@ -1128,6 +1131,10 @@ h4 {
 
 @media (max-width: 1024px) {
 
+    .h2-index {
+        font-size: 2.25rem;
+    }
+
     .heading-and-image {
         max-width: 50rem;
     }
@@ -1178,6 +1185,60 @@ h4 {
 }
 
 @media (max-width: 768px) {
+
+    .adventurer-section {
+        max-width: 95%;
+        padding: 1rem;
+    }
+
+    .text-content-about {
+        font-size: 1rem;
+        padding: 0%;
+    }
+
+    .h1-blogpost {
+        font-size: 1.5rem;
+    }
+
+    .adventurer-title {
+        font-size: 1.5rem;
+    }
+
+    .adventurer-bio {
+        font-size: 1rem;
+    }
+
+    .about-section {
+        padding: 1rem;
+    }
+
+    .post-content h1,
+    h2,
+    h3,
+    h4 {
+        font-size: 1.125rem;
+        padding-bottom: 1%;
+    }
+
+    .post-content p {
+        font-size: 1rem;
+    }
+
+    .heading-bermuda {
+        font-size: 1.125rem;
+    }
+
+    .previous-mango-quest-text {
+        font-size: 1rem;
+    }
+
+    .previous-mango-quest-text2 {
+        font-size: 1rem;
+    }
+
+    .h2-index {
+        font-size: 1.25rem;
+    }
 
     .social-media {
         flex-direction: column;
