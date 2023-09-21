@@ -1,0 +1,190 @@
+/* Styles for screens below 768px (e.g., smartphones) */
+@media screen and (max-width: 767px) {}
+
+/* Tablet styles */
+@media screen and (min-width: 768px) and (max-width: 1023px) {}
+
+/* Desktop styles */
+@media screen and (min-width: 1024px) and (max-width: 1919px) {}
+
+/* Large display styles */
+@media screen and (min-width: 1920px) {}
+
+
+
+@media (max-width: 1024px) {
+
+    .submit-button {
+        font-size: 1.25rem;
+    }
+
+    .form-label {
+        font-size: 1.25rem;
+    }
+
+    .mango-description {
+        font-size: 1.25rem;
+    }
+
+    .heading-and-image {
+        max-width: 50rem;
+    }
+
+    .heading-introduction {
+        max-width: 45rem;
+    }
+
+    .footer-container {
+        display: block;
+    }
+
+    .main-mangoquest {
+        flex-wrap: wrap;
+    }
+
+    .double-intro {
+        width: 85%;
+    }
+
+    .menu-toggle {
+        display: inline-block;
+    }
+
+    .nav-group-left,
+    .nav-group-right {
+        display: none;
+    }
+
+    .heading-introduction {
+        transform: translateX(0%);
+    }
+
+    .filter-box {
+        max-width: 25rem;
+        width: 95%;
+    }
+
+    .adventurer-card {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .adventurer-image {
+        width: 95%;
+    }
+
+    .previous-mango-quest-text {
+        font-size: 1.25rem;
+    }
+
+    .previous-mango-quest-text2 {
+        font-size: 1.25rem;
+    }
+
+    .heading-bermuda {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .submit-button {
+        font-size: 1.5rem;
+    }
+
+    .form-label {
+        font-size: 1.5rem;
+    }
+
+    .contact-h2 {
+        font-size: 1.75rem;
+    }
+
+    .mango-description {
+        font-size: 1.5rem;
+    }
+
+    .adventurer-section {
+        max-width: 95%;
+        padding: 1.5rem;
+    }
+
+    .text-content-about {
+        font-size: 1.5rem;
+        padding: 0%;
+    }
+
+    .h1-blogpost {
+        font-size: 1.5rem;
+    }
+
+    .adventurer-title {
+        font-size: 1.5rem;
+    }
+
+    .adventurer-bio {
+        font-size: 1.5rem;
+    }
+
+    .about-section {
+        padding: 1.5rem;
+    }
+
+    .post-content h1,
+    h2,
+    h3,
+    h4 {
+        font-size: 1.5rem;
+        padding-bottom: 1%;
+    }
+
+    .post-content p {
+        font-size: 1.5rem;
+    }
+
+    .heading-bermuda {
+        font-size: 1.25rem;
+    }
+
+    .previous-mango-quest-text {
+        font-size: 1.25rem;
+    }
+
+    .previous-mango-quest-text2 {
+        font-size: 1.25rem;
+        padding: 1.25rem;
+    }
+
+    .h2-index {
+        font-size: 2.25rem;
+    }
+
+    .social-media {
+        flex-direction: column;
+    }
+
+    .arrow img {
+        max-width: 3rem;
+        max-height: 3rem;
+    }
+
+    .social-media {
+        display: flex;
+        justify-content: center;
+    }
+
+    .mango-description {
+        width: 95%;
+    }
+
+    .contact-form-section {
+        width: 85%;
+    }
+
+    .single-post {
+        flex: 0 0 calc(100% - 6%);
+        max-width: 30rem;
+    }
+
+}
