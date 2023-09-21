@@ -1191,6 +1191,18 @@ h5 {
         width: 95%;
     }
 
+    .previous-mango-quest-text {
+        font-size: 1.25rem;
+    }
+
+    .previous-mango-quest-text2 {
+        font-size: 1.25rem;
+    }
+
+    .heading-bermuda {
+        font-size: 1.25rem;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -1238,11 +1250,11 @@ h5 {
     }
 
     .previous-mango-quest-text {
-        font-size: 1rem;
+        font-size: 1.125rem;
     }
 
     .previous-mango-quest-text2 {
-        font-size: 1rem;
+        font-size: 1.125rem;
     }
 
     .h2-index {
