@@ -67,7 +67,7 @@ header {
 }
 
 #main-header.menu-active {
-    background: linear-gradient(to bottom, #242424 0%, #242424, #242424 23%, transparent 20%, transparent 100%);
+    background: linear-gradient(to bottom, #242424 0%, #242424, #242424 20%, transparent 20%, transparent 100%);
 }
 
 
