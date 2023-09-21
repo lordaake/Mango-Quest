@@ -1140,8 +1140,16 @@ h5 {
 
 @media (max-width: 1024px) {
 
-    .h2-index {
-        font-size: 2.25rem;
+    .submit-button {
+        font-size: 1.25rem;
+    }
+
+    .form-label {
+        font-size: 1.25rem;
+    }
+
+    .mango-description {
+        font-size: 1.25rem;
     }
 
     .heading-and-image {
@@ -1207,6 +1215,22 @@ h5 {
 
 @media (max-width: 768px) {
 
+    .submit-button {
+        font-size: 1.5rem;
+    }
+
+    .form-label {
+        font-size: 1.5rem;
+    }
+
+    .contact-h2 {
+        font-size: 1.75rem;
+    }
+
+    .mango-description {
+        font-size: 1.5rem;
+    }
+
     .adventurer-section {
         max-width: 95%;
         padding: 1.5rem;
@@ -1258,7 +1282,7 @@ h5 {
     }
 
     .h2-index {
-        font-size: 1.75rem;
+        font-size: 2.25rem;
     }
 
     .social-media {
