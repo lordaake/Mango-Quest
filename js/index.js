@@ -104,13 +104,10 @@ async function initialize() {
 
   function increaseFontSize() {
     const style = window.getComputedStyle(previousMangoQuestText, null).getPropertyValue('font-size');
-    const currentSize = parseFloat(style);
-    previousMangoQuestText.style.fontSize = (currentSize * 1.2) + 'px';
+    previousMangoQuestText.style.fontSize = (parseFloat(style) * 1.2) + 'px';
   }
 
   function resetFontSize() {
-    const style = window.getComputedStyle(previousMangoQuestText, null).getPropertyValue('font-size');
-    const currentSize = parseFloat(style);
     previousMangoQuestText.style.fontSize = '';
   }
 
@@ -124,7 +121,6 @@ async function initialize() {
   });
 
   headingAndImage.addEventListener('click', () => {
-    let hasIncreasedFontSize = false;
     if (window.innerWidth <= 1024) {
       headingIntroduction.style.animation = 'bounceDown 0.5s ease-out forwards';
       setTimeout(() => {
