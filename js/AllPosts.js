@@ -63,6 +63,12 @@ document.addEventListener("DOMContentLoaded", async function () {
         const posts = await response.json();
         fetchedPosts += posts.length;
 
+        if (fetchedPosts >= totalPosts || posts.length < 6) {
+            loadMoreButton.style.display = 'none';
+        } else {
+            loadMoreButton.style.display = 'block';
+        }
+
         posts.forEach(post => {
             const singlePost = document.createElement("div");
             singlePost.className = "single-post";
