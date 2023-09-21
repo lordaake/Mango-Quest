@@ -1230,7 +1230,7 @@ h5 {
     }
 
     #main-header.menu-active {
-        background: linear-gradient(to bottom, #242424 0%, #242424, #242424 28%, transparent 20%, transparent 100%);
+        background: linear-gradient(to bottom, #242424 0%, #242424, #242424 20%, transparent 22%, transparent 100%);
     }
 
     main {
@@ -1238,12 +1238,12 @@ h5 {
     }
 
     .mango-title {
-        width: 25rem;
+        width: 20rem;
     }
 
     .mango-logo {
-        width: 10rem;
-        height: 10rem;
+        width: 8rem;
+        height: 8rem;
     }
 
     .menu-toggle {
