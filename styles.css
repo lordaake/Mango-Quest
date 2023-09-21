@@ -1133,13 +1133,16 @@ h5 {
 /* Styles for smartphones */
 @media screen and (max-width: 767px) {
 
+    .post-title {
+        font-size: 1rem;
+    }
+
     .menu-item,
     .menu-text {
         color: white;
         font-size: 5rem;
         text-align: center;
     }
-
 
     .mango-description {
         width: 95%;
