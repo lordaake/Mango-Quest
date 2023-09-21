@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", async function () {
     const loadMoreButton = document.getElementById("load-more");
     const postsWrapper = document.querySelector(".posts-wrapper");
-    const doubleUpIcon = document.querySelector('.double-up');
+    const doubleUpIcon = document.querySelector('.double-up-container');
     const filterContent = document.querySelector('.filter-content');
     const continents = ['Africa', 'Antarctica', 'Asia', 'Europe', 'North America', 'South America', 'Oceania'];
 

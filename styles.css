@@ -413,7 +413,7 @@ header {
     flex-direction: column;
     align-items: flex-start;
     border: 0.4%;
-    border: 5px solid #FFA702;
+    border: 0.125rem solid #FFA702;
     margin-right: 10%;
     margin-bottom: 10%;
 }
@@ -433,9 +433,6 @@ header {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -986,6 +983,7 @@ header {
 .filter-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 0.625rem 0.9375rem;
 }
 
@@ -997,6 +995,14 @@ header {
 .double-up {
     font-size: 1.3125rem;
     color: #000000;
+    transform: rotate(180deg);
+}
+
+.double-up-container {
+    padding: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transform: rotate(180deg);
 }
 

@@ -67,7 +67,7 @@ async function initialize() {
     const marginLeft = parseFloat(style.marginLeft);
     const availableWidth = carouselWrapper.offsetWidth;
 
-    itemsFit = Math.floor(availableWidth / (200 + marginRight + marginLeft));
+    itemsFit = Math.floor(availableWidth / (215 + marginRight + marginLeft));
     itemsToMove = (itemsFit === 1) ? 1 : 3;
     const itemWidth = (availableWidth / itemsFit) - (marginRight + marginLeft);
 
