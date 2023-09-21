@@ -1228,6 +1228,10 @@ h5 {
 /* Tablet styles */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
+    .adventurer-title {
+        font-size: 2.5rem;
+    }
+
     .menu-text {
         font-size: 3rem;
     }
@@ -1262,12 +1266,32 @@ h5 {
     }
 
     .submit-button,
-    .form-label,
-    .mango-description,
     .previous-mango-quest-text,
     .previous-mango-quest-text2,
     .heading-bermuda {
         font-size: 2rem;
+    }
+
+    .text-content-about,
+    .adventurer-bio,
+    .mango-description,
+    .form-label,
+    .contact-h2,
+    .post-title,
+    .post-content p {
+        font-size: 1.75rem;
+    }
+
+    .post-content h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-size: 2rem;
+    }
+
+    .h1-blogpost {
+        font-size: 3rem;
     }
 
     .heading-and-image {
