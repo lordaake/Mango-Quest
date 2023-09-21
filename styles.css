@@ -1062,11 +1062,9 @@ h5 {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-bottom: 2vh;
     margin: 0 auto;
     margin-bottom: 2vh;
     max-width: 95%;
-
 }
 
 .h1-blogpost {
@@ -1143,8 +1141,13 @@ h5 {
     .adventurer-bio,
     .post-content p,
     .h1-blogpost,
-    .text-content-about {
+    .text-content-about,
+    .post-title {
         font-size: 1.125rem;
+    }
+
+    .text-content-about {
+        max-width: 95%;
     }
 
 
@@ -1155,6 +1158,10 @@ h5 {
     .post-content h4 {
         font-size: 1.25rem;
         padding-bottom: 1%;
+    }
+
+    .post-content p {
+        font-size: 1rem;
     }
 
     .h2-index {
