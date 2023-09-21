@@ -178,7 +178,8 @@ header {
     padding: 3.125rem;
 }
 
-.menu-item .menu-text {
+.menu-item,
+.menu-text {
     color: white;
     font-size: 1.5rem;
     text-align: center;
@@ -1132,6 +1133,18 @@ h5 {
 /* Styles for smartphones */
 @media screen and (max-width: 767px) {
 
+    .menu-item,
+    .menu-text {
+        color: white;
+        font-size: 5rem;
+        text-align: center;
+    }
+
+
+    .mango-description {
+        width: 95%;
+    }
+
     .submit-button,
     .form-label,
     .mango-description,
@@ -1211,6 +1224,39 @@ h5 {
 
 /* Tablet styles */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .menu-text {
+        font-size: 3rem;
+    }
+
+    #main-header.menu-active {
+        background: linear-gradient(to bottom, #242424 0%, #242424, #242424 28%, transparent 20%, transparent 100%);
+    }
+
+    main {
+        margin-top: 20rem;
+    }
+
+    .mango-title {
+        width: 25rem;
+    }
+
+    .mango-logo {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .menu-toggle {
+        font-size: 5rem;
+    }
+
+    .mango-description {
+        width: 90%;
+    }
+
+    .post-title {
+        font-size: 1.25rem;
+    }
 
     .submit-button,
     .form-label,
