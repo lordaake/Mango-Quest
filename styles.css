@@ -1135,7 +1135,7 @@ h5 {
     .post-content p,
     .h1-blogpost,
     .text-content-about {
-        font-size: 1.5rem;
+        font-size: 1.125rem;
     }
 
 
@@ -1202,7 +1202,7 @@ h5 {
     .previous-mango-quest-text,
     .previous-mango-quest-text2,
     .heading-bermuda {
-        font-size: 1.25rem;
+        font-size: 2rem;
     }
 
     .heading-and-image {
@@ -1217,6 +1217,10 @@ h5 {
     .filter-box {
         max-width: 25rem;
         width: 95%;
+    }
+
+    .h2-index {
+        font-size: 2.5rem;
     }
 }
 
