@@ -145,6 +145,28 @@ header {
     margin: 0 auto;
 }
 
+.home a {
+    color: #ffa702;
+    text-decoration: none;
+    text-shadow: 0.0625rem 0.0625rem 0.125rem black;
+}
+
+.home {
+    transform: scale(1.21);
+}
+
+.navlink-li:hover {
+    transform: scale(1.2);
+    text-shadow: 0.0625rem 0.0625rem 0.125rem black;
+    box-shadow: 0rem 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.index .home:hover {
+    animation: swing 0.5s ease-in-out;
+}
+
+
 /** mobile-menu css code **/
 
 .mobile-menu,
@@ -535,6 +557,12 @@ header {
     text-align: center;
     margin-bottom: 0.625rem;
     max-width: 80%;
+}
+
+.adventures-button:hover {
+    transform: scale(1.2);
+    filter: brightness(1.05);
+    transition: 0.3s ease;
 }
 
 .see-all-link {
