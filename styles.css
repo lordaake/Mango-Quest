@@ -1259,8 +1259,9 @@ h6 {
         width: 90%;
     }
 
+    .post-date,
     .post-title {
-        font-size: 1.25rem;
+        font-size: 1.125rem;
     }
 
     /**headings **/
@@ -1296,7 +1297,6 @@ h6 {
     .adventurer-bio,
     .mango-description,
     .form-label,
-    .post-title,
     .post-content p,
     .submit-button,
     .tag-filter {
