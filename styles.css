@@ -1169,19 +1169,26 @@ h6 {
     }
 
     /**headings **/
-    .previous-mango-quest-text,
     .heading-bermuda,
     .adventurer-title,
     .contact-h2,
-    .h1-blogpost,
     .post-content h1,
     h2,
     h3,
     h4,
     h5,
     h6 {
-        font-size: 0.7875rem;
+        font-size: 1rem;
     }
+
+    .h1-blogpost {
+        font-size: 1.125rem;
+    }
+
+    .previous-mango-quest-text {
+        font-size: 1rem;
+    }
+
 
     .allposts-title {
         font-size: 1.05rem;
@@ -1195,7 +1202,9 @@ h6 {
     .form-label,
     .post-title,
     .post-content p,
-    .submit-button {
+    .submit-button,
+    .copyright,
+    .follow-us-text {
         font-size: 0.7875rem;
     }
 
@@ -1205,7 +1214,8 @@ h6 {
     }
 
     .h2-index {
-        font-size: 1.05rem;
+        font-size: 1.25rem;
+        margin-bottom: 4%;
     }
 
     .social-media {

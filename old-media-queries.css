@@ -10,9 +10,15 @@
 /* Large display styles */
 @media screen and (min-width: 1920px) {}
 
-
-
-@media (max-width: 1024px) {
+/**headings **/
+.previous-mango-quest-text .heading-bermuda .h2-index .adventurer-title .contact-h2 .allposts-title .h1-blogpost .post-content h1,
+h2,
+h3,
+h4,
+h5,
+h6
+/** regular text **/
+.previous-mango-quest-text2 .text-content-about .adventurer-bio .mango-description .form-label .post-title .post-content p @media (max-width: 1024px) {
 
     .submit-button {
         font-size: 1.25rem;

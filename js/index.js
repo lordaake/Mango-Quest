@@ -71,6 +71,8 @@ async function initialize() {
 
     if (availableWidth < 768) {
       itemsToDisplay = 1;
+    } else if (availableWidth >= 768 && availableWidth < 1024) {
+      itemsToDisplay = 2;
     } else {
       itemsToDisplay = 3;
     }
