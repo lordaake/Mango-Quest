@@ -7,8 +7,7 @@ async function initialize() {
   const headingIntroduction = document.querySelector('.heading-introduction');
   const previousMangoQuestText = document.querySelector('.previous-mango-quest-text');
 
-  let itemsFit = 0;
-  let itemsToMove = 0;
+  let itemsToDisplay = 3;
   let currentOffset = 0;
 
   async function fetchAndPopulateCarousel() {
@@ -52,13 +51,13 @@ async function initialize() {
   }
 
   function updatePosition() {
-    const offset = currentOffset * (carouselWrapper.offsetWidth / itemsFit);
+    const offset = currentOffset * (carouselWrapper.offsetWidth / itemsToDisplay);
     carousel.style.transform = `translateX(${offset}px)`;
   }
 
   function updateArrows() {
     const carouselItems = document.querySelectorAll('.carousel-item');
-    const maxOffset = -1 * (carouselItems.length - itemsFit);
+    const maxOffset = -1 * (carouselItems.length - itemsToDisplay);
 
     leftArrow.disabled = currentOffset >= 0;
     rightArrow.disabled = currentOffset <= maxOffset;
@@ -70,9 +69,13 @@ async function initialize() {
     const marginLeft = parseFloat(style.marginLeft);
     const availableWidth = carouselWrapper.offsetWidth;
 
-    itemsFit = Math.floor(availableWidth / (250 + marginRight + marginLeft));
-    itemsToMove = (itemsFit === 1) ? 1 : 3;
-    const itemWidth = (availableWidth / itemsFit) - (marginRight + marginLeft);
+    if (availableWidth < 768) {
+      itemsToDisplay = 1;
+    } else {
+      itemsToDisplay = 3;
+    }
+
+    const itemWidth = (availableWidth / itemsToDisplay) - (marginRight + marginLeft);
 
     document.querySelectorAll('.carousel-item').forEach(item => {
       item.style.width = `${itemWidth}px`;
@@ -88,7 +91,7 @@ async function initialize() {
   leftArrow.addEventListener('click', () => {
     if (currentOffset >= 0) return;
 
-    currentOffset += itemsToMove;
+    currentOffset += itemsToDisplay;
     currentOffset = Math.min(currentOffset, 0);
     updatePosition();
     updateArrows();
@@ -96,10 +99,10 @@ async function initialize() {
 
   rightArrow.addEventListener('click', () => {
     const carouselItems = document.querySelectorAll('.carousel-item');
-    const maxOffset = -1 * (carouselItems.length - itemsFit);
+    const maxOffset = -1 * (carouselItems.length - itemsToDisplay);
     if (currentOffset <= maxOffset) return;
 
-    currentOffset -= itemsToMove;
+    currentOffset -= itemsToDisplay;
     currentOffset = Math.max(currentOffset, maxOffset);
     updatePosition();
     updateArrows();
