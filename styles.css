@@ -391,7 +391,6 @@ header {
 }
 
 .carousel-item {
-    width: 100%;
     flex: 0 0 auto;
     position: relative;
     display: flex;
@@ -528,7 +527,6 @@ header {
     align-items: center;
     padding: 0 0.625rem;
     text-align: center;
-    padding-top: 2%;
 }
 
 .adventures-button {
@@ -782,13 +780,13 @@ header {
 
 .contact-form-section {
     width: 70%;
-}
-
-#contact-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#contact-form {
     width: 100%;
 }
 
@@ -804,7 +802,7 @@ header {
 
 .input-box,
 .message-box {
-    width: 100%;
+    width: 90%;
     padding: 1rem;
     border-radius: 1rem;
     border: 0.1rem solid rgba(0, 0, 0, 0.67);
@@ -978,7 +976,6 @@ header {
 .double-up {
     font-size: 1.3125rem;
     color: #000000;
-    transform: rotate(180deg);
 }
 
 .double-up-container {
@@ -988,6 +985,7 @@ header {
     align-items: center;
     transform: rotate(180deg);
 }
+
 
 .filter-icons i,
 .filter-labels .continent {
@@ -1083,12 +1081,22 @@ h6 {
 }
 
 .blog-post img {
-    width: 100%;
+    width: 70%;
     height: auto;
     margin-bottom: 2vh;
     border: solid;
     border-width: 0.0625rem;
     border-color: #d48032a2;
+}
+
+.wp-block-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    margin: 0;
+    padding: 0;
 }
 
 .blog-post img:hover {
@@ -1111,8 +1119,8 @@ h6 {
 }
 
 .modal-content {
-    max-width: 70%;
-    max-height: 70%;
+    max-width: 80%;
+    max-height: 80%;
     object-fit: contain;
     border: 0.0625rem solid #d48032a2;
 }
@@ -1123,6 +1131,14 @@ h6 {
 
 /** media queries **/
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .blog-post,
+    .mango-description,
+    .contact-form-section {
+        width: 80%;
+    }
+}
 
 /* Styles for smartphones */
 @media screen and (max-width: 767px) {
@@ -1148,10 +1164,14 @@ h6 {
         width: 95%;
     }
 
+    .blog-post img {
+        width: 90%;
+    }
+
     .menu-item,
     .menu-text {
         color: white;
-        font-size: 1.05rem;
+        font-size: clamp(1rem, 0.6429rem + 1.7857vw, 1.5rem);
         text-align: center;
     }
 
@@ -1177,21 +1197,16 @@ h6 {
     h4,
     h5,
     h6,
+    .previous-mango-quest-text {
+        font-size: clamp(0.9rem, 0.6054rem + 1.4732vw, 1.3125rem);
+    }
+
     .allposts-title {
-        font-size: 1.5rem;
+        font-size: clamp(1.5rem, 0.7857rem + 3.5714vw, 2.5rem);
     }
 
     .h1-blogpost {
-        font-size: 1.125rem;
-    }
-
-    .previous-mango-quest-text {
-        font-size: 1rem;
-    }
-
-
-        {
-        font-size: 1.05rem;
+        font-size: clamp(1.2rem, 0.4857rem + 3.5714vw, 2.2rem);
     }
 
     /** regular text **/
@@ -1205,7 +1220,7 @@ h6 {
     .submit-button,
     .copyright,
     .follow-us-text {
-        font-size: 1rem;
+        font-size: clamp(0.8rem, 0.4786rem + 1.6071vw, 1.25rem);
     }
 
     .post-date,
@@ -1214,7 +1229,7 @@ h6 {
     }
 
     .h2-index {
-        font-size: 1.25rem;
+        font-size: clamp(1rem, -0.5179rem + 7.5893vw, 3.125rem);
         margin-bottom: 4%;
     }
 
@@ -1235,12 +1250,16 @@ h6 {
         padding: 0 1rem 1rem 1rem;
     }
 
+    .previous-mango-quest-text2 {
+        padding: 0 10% 10%;
+    }
+
     .mango-description,
-    .adventurer-image {
+    .adventurer-image,
+    .contact-form-section {
         width: 95%;
     }
 
-    .contact-form-section,
     .double-intro {
         width: 85%;
     }
@@ -1263,6 +1282,7 @@ h6 {
 
 
 @media (max-width: 1024px) {
+
     .footer-container {
         display: block;
     }
@@ -1280,6 +1300,18 @@ h6 {
     .nav-group-right {
         display: none;
     }
+
+    .footer-section {
+        padding-top: 2%;
+    }
+
+    .social-icons,
+    .follow-us-text,
+    .copyright {
+        padding-top: 0.4rem;
+        padding-bottom: 0.4rem;
+    }
+
 }
 
 @media (max-width: 767px) {

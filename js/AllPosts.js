@@ -106,7 +106,12 @@ document.addEventListener("DOMContentLoaded", async function () {
     });
 
     doubleUpIcon.addEventListener('click', function () {
-        filterContent.style.display = filterContent.style.display === 'none' ? 'flex' : 'none';
-        doubleUpIcon.style.transform = filterContent.style.display === 'none' ? 'rotate(180deg)' : 'rotate(0deg)';
+        if (filterContent.style.display === 'none' || filterContent.style.display === '') {
+            filterContent.style.display = 'flex';
+            doubleUpIcon.style.transform = 'rotate(0deg)';
+        } else {
+            filterContent.style.display = 'none';
+            doubleUpIcon.style.transform = 'rotate(180deg)';
+        }
     });
 });

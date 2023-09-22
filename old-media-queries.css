@@ -195,6 +195,105 @@ h6
 
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .adventurer-title {
+        font-size: 2.5rem;
+    }
+
+    #main-header.menu-active {
+        background: linear-gradient(to bottom, #242424 0%, #242424, #242424 22%, transparent 24%, transparent 100%);
+    }
+
+    main {
+        margin-top: 15rem;
+    }
+
+    .mango-title {
+        width: 15rem;
+    }
+
+    .mango-logo {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .menu-toggle {
+        font-size: 5rem;
+    }
+
+    .mango-description {
+        width: 90%;
+    }
+
+    .post-date,
+    .post-title {
+        font-size: 1rem;
+    }
+
+    /**headings **/
+    .adventurer-title,
+    .contact-h2,
+    .post-content h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    .previous-mango-quest-text,
+    .menu-text {
+        font-size: 1.75rem;
+    }
+
+    .heading-bermuda {
+        font-size: 1.5rem;
+    }
+
+    .allposts-title {
+        font-size: 2.5rem;
+    }
+
+    .h1-blogpost,
+    .h2-index {
+        font-size: 2.5rem;
+    }
+
+
+    /** regular text **/
+    .previous-mango-quest-text2,
+    .text-content-about,
+    .adventurer-bio,
+    .mango-description,
+    .form-label,
+    .post-content p,
+    .submit-button,
+    .tag-filter {
+        font-size: 1.4rem;
+    }
+
+    .icon-text,
+    .filter-icons i {
+        font-size: 1.25rem;
+    }
+
+    .heading-and-image {
+        max-width: 80%;
+    }
+
+    .heading-introduction {
+        max-width: 70%;
+    }
+
+    .heading-introduction {
+        transform: translateX(0%);
+    }
+
+    .filter-box {
+        max-width: 25rem;
+        width: 95%;
+    }
+
+}
+
 let itemsFit=0;
 let itemsToMove=0;
 let currentOffset=0;
