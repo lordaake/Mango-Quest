@@ -1,7 +1,3 @@
-let itemsFit = 0;
-let itemsToMove = 0;
-let currentOffset = 0;
-
 async function initialize() {
   const carouselWrapper = document.querySelector('.carousel-wrapper');
   const carousel = document.querySelector('.carousel');
@@ -11,42 +7,49 @@ async function initialize() {
   const headingIntroduction = document.querySelector('.heading-introduction');
   const previousMangoQuestText = document.querySelector('.previous-mango-quest-text');
 
+  let itemsFit = 0;
+  let itemsToMove = 0;
+  let currentOffset = 0;
+
   async function fetchAndPopulateCarousel() {
-    const response = await fetch('https://mangoquest.themlmleader.com/wp-json/wp/v2/posts?_embed&per_page=100');
-    const posts = await response.json();
+    try {
+      const response = await fetch('https://mangoquest.themlmleader.com/wp-json/wp/v2/posts?_embed&per_page=100');
+      const posts = await response.json();
 
-    while (carousel.firstChild) {
-      carousel.removeChild(carousel.firstChild);
-    }
+      while (carousel.firstChild) {
+        carousel.removeChild(carousel.firstChild);
+      }
 
-    posts.forEach(post => {
-      const carouselItem = document.createElement('div');
-      carouselItem.className = 'carousel-item';
+      posts.forEach(post => {
+        const carouselItem = document.createElement('div');
+        carouselItem.className = 'carousel-item';
 
-      const imgElement = document.createElement('img');
-      const altText = post._embedded['wp:featuredmedia'][0].alt_text || post.title.rendered;
-      imgElement.src = post._embedded['wp:featuredmedia'][0].source_url;
-      imgElement.alt = altText;
+        const imgElement = document.createElement('img');
+        const altText = post._embedded['wp:featuredmedia'][0].alt_text || post.title.rendered;
+        imgElement.src = post._embedded['wp:featuredmedia'][0].source_url;
+        imgElement.alt = altText;
 
-      const descriptionElement = document.createElement('div');
-      descriptionElement.className = 'description description-styled';
-      descriptionElement.innerHTML = post.title.rendered;
+        const descriptionElement = document.createElement('div');
+        descriptionElement.className = 'description description-styled';
+        descriptionElement.innerHTML = post.title.rendered;
 
-      carouselItem.appendChild(imgElement);
-      carouselItem.appendChild(descriptionElement);
-      carousel.appendChild(carouselItem);
+        carouselItem.appendChild(imgElement);
+        carouselItem.appendChild(descriptionElement);
+        carousel.appendChild(carouselItem);
 
-      carouselItem.setAttribute("data-post-id", post.id);
+        carouselItem.setAttribute("data-post-id", post.id);
 
-      carouselItem.addEventListener('click', function () {
-        const postId = this.getAttribute("data-post-id");
-        window.location.href = `blog-post.html?id=${postId}`;
+        carouselItem.addEventListener('click', function () {
+          const postId = this.getAttribute("data-post-id");
+          window.location.href = `blog-post.html?id=${postId}`;
+        });
       });
-    });
 
-    updateCarousel();
+      updateCarousel();
+    } catch (error) {
+      console.error('Error fetching and populating carousel:', error);
+    }
   }
-
 
   function updatePosition() {
     const offset = currentOffset * (carouselWrapper.offsetWidth / itemsFit);
@@ -67,7 +70,7 @@ async function initialize() {
     const marginLeft = parseFloat(style.marginLeft);
     const availableWidth = carouselWrapper.offsetWidth;
 
-    itemsFit = Math.floor(availableWidth / (240 + marginRight + marginLeft));
+    itemsFit = Math.floor(availableWidth / (250 + marginRight + marginLeft));
     itemsToMove = (itemsFit === 1) ? 1 : 3;
     const itemWidth = (availableWidth / itemsFit) - (marginRight + marginLeft);
 
@@ -129,12 +132,10 @@ async function initialize() {
     }
   });
 
-
   headingAndImage.addEventListener('mouseleave', function () {
     headingIntroduction.style.animation = '';
     resetFontSize();
   });
 }
-
 
 document.addEventListener('DOMContentLoaded', initialize);

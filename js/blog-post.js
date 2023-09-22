@@ -38,18 +38,13 @@ function populateBlogSection(post) {
 function setupImageModal() {
   const modal = document.getElementById('imageModal');
   const modalImage = document.getElementById('modalImage');
-  const closeButton = document.querySelector('.close');
 
   if (modal === null) {
     console.error("Modal element is not in the DOM.");
     return;
   }
 
-  if (closeButton) {
-    closeButton.addEventListener('click', closeModal);
-  }
-
-  const images = document.querySelectorAll('.clickable-image, .post-content img'); // This line updated
+  const images = document.querySelectorAll('.clickable-image, .post-content img');
 
   images.forEach(image => {
     image.addEventListener('click', function () {

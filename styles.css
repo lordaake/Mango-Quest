@@ -398,7 +398,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    border: 0.4%;
     border: 0.125rem solid #FFA702;
     margin-right: 10%;
     margin-bottom: 10%;
@@ -1003,6 +1002,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 0.5rem;
 }
 
 .filter-labels {
@@ -1041,12 +1041,13 @@ header {
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
     font-size: 1.5rem;
     text-align: center;
     color: rgb(255, 225, 151);
     text-shadow: 0px 1px 0px #000000;
-    max-width: 95%;
+    width: 100%;
 }
 
 .post-content {
@@ -1054,6 +1055,8 @@ h5 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 60rem;
+    width: 95%;
 }
 
 .post-content p {
@@ -1065,7 +1068,7 @@ h5 {
     line-height: normal;
     margin: 0 auto;
     margin-bottom: 2vh;
-    max-width: 95%;
+    max-width: 100%;
 }
 
 .h1-blogpost {
@@ -1081,7 +1084,6 @@ h5 {
 }
 
 .blog-post img {
-    max-width: 45rem;
     width: 100%;
     height: auto;
     margin-bottom: 2vh;
@@ -1116,68 +1118,64 @@ h5 {
     border: 0.0625rem solid #d48032a2;
 }
 
-.close {
-    position: absolute;
-    top: 0.625rem;
-    right: 1.5625rem;
-    font-size: 2.1875rem;
-    color: #fff;
-    cursor: pointer;
-    z-index: 10000;
+#imageModal {
+    display: none;
 }
-
-
 
 /** media queries **/
 
 /* Styles for smartphones */
 @media screen and (max-width: 767px) {
 
-    .post-title {
-        font-size: 1rem;
-    }
-
     .menu-item,
     .menu-text {
         color: white;
-        font-size: 5rem;
+        font-size: 1.75rem;
         text-align: center;
-    }
-
-    .mango-description {
-        width: 95%;
-    }
-
-    .submit-button,
-    .form-label,
-    .mango-description,
-    .previous-mango-quest-text,
-    .previous-mango-quest-text2,
-    .adventurer-title,
-    .adventurer-bio,
-    .post-content p,
-    .h1-blogpost,
-    .text-content-about,
-    .post-title {
-        font-size: 1.125rem;
     }
 
     .text-content-about {
         max-width: 95%;
     }
 
-
     .contact-h2,
     .post-content h1,
     .post-content h2,
     .post-content h3,
     .post-content h4 {
-        font-size: 1.25rem;
         padding-bottom: 1%;
     }
 
-    .post-content p {
-        font-size: 1rem;
+    /**headings **/
+    .previous-mango-quest-text,
+    .heading-bermuda,
+    .adventurer-title,
+    .contact-h2,
+    .h1-blogpost,
+    .post-content h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        1.25rem;
+    }
+
+    .allposts-title {
+        font-size: 1.5rem;
+    }
+
+
+    /** regular text **/
+    .previous-mango-quest-text2,
+    .text-content-about,
+    .adventurer-bio,
+    .mango-description,
+    .form-label,
+    .post-title,
+    .post-content p,
+    .submit-button {
+        font-size: 1.125rem;
     }
 
     .h2-index {
@@ -1223,6 +1221,10 @@ h5 {
         flex: 0 0 calc(100% - 6%);
         max-width: 30rem;
     }
+
+    #main-header.menu-active {
+        background: linear-gradient(to bottom, #242424 0%, #242424, #242424 20%, transparent 22%, transparent 100%);
+    }
 }
 
 /* Tablet styles */
@@ -1232,12 +1234,8 @@ h5 {
         font-size: 2.5rem;
     }
 
-    .menu-text {
-        font-size: 3rem;
-    }
-
     #main-header.menu-active {
-        background: linear-gradient(to bottom, #242424 0%, #242424, #242424 20%, transparent 22%, transparent 100%);
+        background: linear-gradient(to bottom, #242424 0%, #242424, #242424 22%, transparent 24%, transparent 100%);
     }
 
     main {
@@ -1265,23 +1263,11 @@ h5 {
         font-size: 1.25rem;
     }
 
-    .submit-button,
+    /**headings **/
     .previous-mango-quest-text,
-    .previous-mango-quest-text2,
-    .heading-bermuda {
-        font-size: 2rem;
-    }
-
-    .text-content-about,
-    .adventurer-bio,
-    .mango-description,
-    .form-label,
+    .heading-bermuda,
+    .adventurer-title,
     .contact-h2,
-    .post-title,
-    .post-content p {
-        font-size: 1.75rem;
-    }
-
     .post-content h1,
     h2,
     h3,
@@ -1290,8 +1276,36 @@ h5 {
         font-size: 2rem;
     }
 
-    .h1-blogpost {
+    .allposts-title {
+        font-size: 2.5rem;
+    }
+
+    .h1-blogpost,
+    .h2-index {
         font-size: 3rem;
+    }
+
+    .menu-text {
+        font-size: 2.5rem;
+    }
+
+
+    /** regular text **/
+    .previous-mango-quest-text2,
+    .text-content-about,
+    .adventurer-bio,
+    .mango-description,
+    .form-label,
+    .post-title,
+    .post-content p,
+    .submit-button,
+    .tag-filter {
+        font-size: 1.5rem;
+    }
+
+    .icon-text,
+    .filter-icons i {
+        font-size: 1.25rem;
     }
 
     .heading-and-image {
@@ -1308,9 +1322,6 @@ h5 {
         width: 95%;
     }
 
-    .h2-index {
-        font-size: 2.5rem;
-    }
 }
 
 @media (max-width: 1024px) {
