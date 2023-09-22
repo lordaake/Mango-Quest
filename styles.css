@@ -1128,6 +1128,23 @@ h6 {
 /* Styles for smartphones */
 @media screen and (max-width: 767px) {
 
+    main {
+        margin-top: 8rem;
+    }
+
+    .mango-logo {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .mango-title {
+        width: 10rem;
+    }
+
+    .menu-toggle {
+        font-size: 1.5rem;
+    }
+
     .mobile-menu.active {
         width: 95%;
     }
@@ -1135,7 +1152,7 @@ h6 {
     .menu-item,
     .menu-text {
         color: white;
-        font-size: 1.5rem;
+        font-size: 1.05rem;
         text-align: center;
     }
 
@@ -1163,13 +1180,12 @@ h6 {
     h4,
     h5,
     h6 {
-        1.125rem;
+        font-size: 0.7875rem;
     }
 
     .allposts-title {
-        font-size: 1.5rem;
+        font-size: 1.05rem;
     }
-
 
     /** regular text **/
     .previous-mango-quest-text2,
@@ -1180,16 +1196,16 @@ h6 {
     .post-title,
     .post-content p,
     .submit-button {
-        font-size: 1.125rem;
+        font-size: 0.7875rem;
     }
 
     .post-date,
     .post-title {
-        font-size: 1.25rem;
+        font-size: 0.875rem;
     }
 
     .h2-index {
-        font-size: 1.5rem;
+        font-size: 1.05rem;
     }
 
     .social-media {
@@ -1199,8 +1215,8 @@ h6 {
     }
 
     .arrow img {
-        max-width: 3rem;
-        max-height: 3rem;
+        max-width: 2.1rem;
+        max-height: 2.1rem;
     }
 
     .adventurer-section,
@@ -1221,13 +1237,14 @@ h6 {
 
     .single-post {
         flex: 0 0 calc(100% - 6%);
-        max-width: 30rem;
+        max-width: 21rem;
     }
 
     #main-header.menu-active {
         background: linear-gradient(to bottom, #242424 0%, #242424, #242424 20%, transparent 22%, transparent 100%);
     }
 }
+
 
 /* Tablet styles */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
