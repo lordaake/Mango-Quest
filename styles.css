@@ -1163,7 +1163,7 @@ h6 {
     h4,
     h5,
     h6 {
-        1.25rem;
+        1.5rem;
     }
 
     .allposts-title {
@@ -1180,24 +1180,16 @@ h6 {
     .post-title,
     .post-content p,
     .submit-button {
-        font-size: 1.125rem;
+        font-size: 1.25rem;
     }
 
     .post-date,
     .post-title {
-        font-size: 1.125rem;
+        font-size: 1.25rem;
     }
 
     .h2-index {
         font-size: 1.5rem;
-    }
-
-    .heading-bermuda {
-        font-size: 1.125rem;
-    }
-
-    .previous-mango-quest-text2 {
-        padding: 1.25rem;
     }
 
     .social-media {
