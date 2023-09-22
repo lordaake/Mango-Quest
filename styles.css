@@ -159,7 +159,6 @@ header {
     border-style: solid;
     border-color: #f8ce58;
     border-width: 0 0.1875rem 0.1875rem 0.1875rem;
-    border-radius: 0 0 0.625rem 0.625rem;
 }
 
 .mobile-menu.active {
@@ -1252,7 +1251,7 @@ h6 {
     }
 
     #main-header.menu-active {
-        background: linear-gradient(to bottom, #242424 0%, #242424, #242424 20%, transparent 22%, transparent 100%);
+        background: #242424;
     }
 
     .carousel-arrows {
