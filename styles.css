@@ -905,9 +905,9 @@ header {
 .posts-wrapper {
     width: 95%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     margin: 0 auto;
 }
 
@@ -1165,6 +1165,15 @@ h6 {
     .contact-form-section {
         width: 80%;
     }
+
+    .single-post {
+        flex: 0 0 calc(44% - 2%);
+    }
+
+    .post-title {
+        max-width: 70%;
+        margin: 0 auto;
+    }
 }
 
 /* Styles for smartphones */
@@ -1250,9 +1259,8 @@ h6 {
         font-size: clamp(0.8rem, 0.4786rem + 1.6071vw, 1.25rem);
     }
 
-    .post-date,
-    .post-title {
-        font-size: 0.875rem;
+    .post-date {
+        font-size: 1.125rem;
     }
 
     .h2-index {
@@ -1293,7 +1301,12 @@ h6 {
 
     .single-post {
         flex: 0 0 calc(100% - 6%);
-        max-width: 21rem;
+        max-width: 90%;
+    }
+
+    .post-image {
+        max-height: 100%;
+        height: auto;
     }
 
     #main-header.menu-active {
@@ -1304,6 +1317,7 @@ h6 {
         height: 3rem;
         margin-top: 2%;
     }
+
 }
 
 
@@ -1339,17 +1353,4 @@ h6 {
         padding-bottom: 0.4rem;
     }
 
-}
-
-@media (max-width: 767px) {
-
-    .social-media {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .single-post {
-        flex: 0 0 calc(100% - 6%);
-    }
 }
