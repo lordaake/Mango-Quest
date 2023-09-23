@@ -146,9 +146,9 @@ header {
 }
 
 .home a {
-    color: #ffa702;
+    color: #F8CE58;
     text-decoration: none;
-    text-shadow: 0.0625rem 0.0625rem 0.125rem black;
+    text-shadow: 0.0625rem 0.0625rem 0.125rem rgba(255, 255, 255, 0.333);
 }
 
 .home {
@@ -356,7 +356,8 @@ header {
     color: #ffffff;
     font: var(--adventure-quest, 400 1.25rem "Finger Paint", sans-serif);
     text-align: center;
-    border: 0.3125rem solid gold;
+    border: 0.2rem solid gold;
+    border-radius: 0.625rem;
 }
 
 
@@ -1313,6 +1314,16 @@ h6 {
     .carousel-arrows {
         height: 3rem;
         margin-top: 2%;
+    }
+
+    .heading-image {
+        border-width: 0.2rem 0.2rem 0 0.2rem;
+    }
+
+    .previous-adventure-image,
+    .heading-introduction,
+    .heading-bermuda {
+        border-width: 0.2rem;
     }
 
 }
