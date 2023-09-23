@@ -559,12 +559,6 @@ header {
     max-width: 80%;
 }
 
-.adventures-button:hover {
-    transform: scale(1.2);
-    filter: brightness(1.05);
-    transition: 0.3s ease;
-}
-
 .see-all-link {
     color: #000000;
     text-decoration: none;
@@ -575,7 +569,7 @@ header {
 
 .copyright {
     font-weight: 400;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-family: "Fjord", sans-serif;
     padding-top: 0.625rem;
     padding-bottom: 0.625rem;
@@ -600,7 +594,7 @@ header {
 
 .follow-us-text {
     font-weight: 400;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-family: "Fjord", sans-serif;
     margin-right: 0.625rem;
     padding-bottom: 2%;
@@ -1253,10 +1247,13 @@ h6 {
     .form-label,
     .post-title,
     .post-content p,
-    .submit-button,
+    .submit-button {
+        font-size: clamp(0.8rem, 0.4786rem + 1.6071vw, 1.25rem);
+    }
+
     .copyright,
     .follow-us-text {
-        font-size: clamp(0.8rem, 0.4786rem + 1.6071vw, 1.25rem);
+        font-size: clamp(0.8rem, 0.5679rem + 1.1607vw, 1.125rem);
     }
 
     .post-date {
@@ -1320,6 +1317,13 @@ h6 {
 
 }
 
+@media screen and (min-width: 1024px) {
+    .adventures-button:hover {
+        transform: scale(1.05);
+        filter: brightness(1.05);
+        transition: 0.3s ease;
+    }
+}
 
 
 @media (max-width: 1024px) {
