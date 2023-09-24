@@ -583,7 +583,7 @@ header {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.66) 0%, rgba(0, 0, 0, 0.383) 100%), rgba(211, 211, 211, 0.32) 50% / cover no-repeat;
     color: #FFF;
     text-align: center;
-    font: 400 1.5625rem var(--ff-heading1);
+    font: 400 1.5rem var(--ff-heading1);
     line-height: normal;
     cursor: pointer;
     padding: 0.625rem;
@@ -1363,6 +1363,10 @@ h6 {
     .h2-index {
         font-size: clamp(1rem, -0.0738rem + 5.3691vw, 2.5rem);
         margin-bottom: 4%;
+    }
+
+    .description-styled {
+        font-size: clamp(1rem, 0.6421rem + 1.7897vw, 1.5rem);
     }
 
     .social-media {
