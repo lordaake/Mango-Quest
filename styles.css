@@ -1279,7 +1279,7 @@ h6 {
     }
 
     .menu-toggle {
-        font-size: 1.8rem;
+        font-size: clamp(1.5rem, 0.4262rem + 5.3691vw, 3rem);
     }
 
     .blog-post img {
