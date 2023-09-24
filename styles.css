@@ -291,6 +291,7 @@ header {
     align-items: center;
     justify-content: center;
     padding: 3.125rem;
+    padding-top: 1.5rem;
 }
 
 .menu-item,
