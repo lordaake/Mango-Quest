@@ -989,11 +989,8 @@ header {
 .allposts-title {
     color: #FFF;
     text-align: center;
-    font-family: var(--ff-heading2);
-    font-size: 2.5rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font: 400 2.5rem var(--ff-heading2);
+    font-weight: bold;
     padding: 0 1rem 1rem 1rem;
 }
 
@@ -1040,12 +1037,20 @@ header {
     transition: transform 0.5s ease;
 }
 
+.single-post:hover .post-title {
+    font-weight: bold;
+}
+
 .post-date,
 .post-title {
     color: #000000;
     text-align: center;
     font: 400 1.125rem var(--ff-regular);
     padding: 0.5rem;
+}
+
+.post-title {
+    padding-bottom: 1rem;
 }
 
 .button-load-more,
@@ -1105,6 +1110,7 @@ header {
 .tag-filter {
     color: #000000;
     font: 400 1.125rem var(--ff-regular);
+    font-weight: bold;
 }
 
 .double-up {
