@@ -69,9 +69,9 @@ async function initialize() {
     const marginLeft = parseFloat(style.marginLeft);
     const availableWidth = carouselWrapper.offsetWidth;
 
-    if (availableWidth < 500) {
+    if (availableWidth < 400) {
       itemsToDisplay = 1;
-    } else if (availableWidth >= 500 && availableWidth < 700) {
+    } else if (availableWidth >= 400 && availableWidth < 700) {
       itemsToDisplay = 2;
     } else {
       itemsToDisplay = 3;
