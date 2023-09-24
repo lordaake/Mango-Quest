@@ -99,11 +99,6 @@ main {
     margin-top: 12rem;
 }
 
-.main>* {
-    margin-block: 1000px;
-}
-
-
 body.index {
     background:
         url('images/background-frontpage.png');
@@ -709,7 +704,7 @@ header {
     max-width: 60rem;
     width: 90%;
     margin: 0 auto;
-    padding: 0 1.25rem 1.25rem 1.25rem;
+    padding: 0 2rem 2rem 2rem;
     text-align: center;
     box-sizing: border-box;
     display: flex;
@@ -749,7 +744,7 @@ header {
     font: 400 1.125rem/1.6 var(--ff-regular);
     width: 95%;
     max-width: 40rem;
-    padding: 0 1.25rem 1.25rem 1.25rem;
+    margin-bottom: 0.5rem;
 }
 
 .text-content p {
@@ -823,7 +818,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
     margin-top: 3%;
     width: fit-content;
@@ -960,7 +955,7 @@ header {
     padding: 0.625rem 1.25rem;
     font-size: 1rem;
     cursor: pointer;
-    width: 50%;
+    width: 30%;
     border-radius: 0.625rem;
     border: 0.0625rem solid #000;
     background: #FFF;
@@ -1290,7 +1285,7 @@ h6 {
 @media screen and (max-width: 767px) {
 
     main {
-        margin-top: clamp(8rem, 6.5682rem + 7.1588vw, 10rem);
+        margin-top: clamp(9rem, 6.8523rem + 10.7383vw, 12rem);
     }
 
     .mango-logo {
@@ -1372,7 +1367,7 @@ h6 {
     .submit-button,
     .load-more,
     .see-all-link {
-        font-size: clamp(0.8rem, 0.4786rem + 1.6071vw, 1.25rem);
+        font-size: clamp(0.8rem, 0.5673rem + 1.1633vw, 1.125rem);
     }
 
     .copyright,
@@ -1403,7 +1398,8 @@ h6 {
     .adventurer-section,
     .about-section {
         max-width: 95%;
-        padding: 0 1rem 1rem 1rem;
+        padding: clamp(0.5rem, -0.5738rem + 5.3691vw, 2rem);
+        padding-top: 0;
     }
 
     .previous-mango-quest-text2 {
@@ -1450,6 +1446,17 @@ h6 {
 
     .message-box {
         height: clamp(10rem, 6.4206rem + 17.8971vw, 15rem);
+    }
+
+    .submit-button {
+        width: 40%;
+    }
+
+    .mango-quest-section {
+        gap: clamp(1rem, 0.2841rem + 3.5794vw, 2rem);
+        width: 95%;
+        padding: clamp(0.5rem, -0.5738rem + 5.3691vw, 2rem);
+        padding-top: 0;
     }
 
 }
