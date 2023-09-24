@@ -307,11 +307,13 @@ header {
     filter: brightness(1.3);
     box-shadow: 0 0 2.5rem rgba(255, 166, 2, 1);
     transform: rotate(2deg);
+    transition: transform 0.3s ease;
 }
 
 .heading-and-image:hover {
     filter: brightness(1.3);
     box-shadow: 0 0 2.5rem rgba(255, 166, 2, 1);
+    transition: box-shadow 0.5s ease, filter 1s ease;
 }
 
 .heading-image {
@@ -400,7 +402,7 @@ header {
 .h2-index {
     color: #FFF;
     font-family: 'Finger Paint';
-    font-size: 3.125rem;
+    font-size: 2.5rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -1299,7 +1301,7 @@ h6 {
     }
 
     .h2-index {
-        font-size: clamp(1rem, -0.5179rem + 7.5893vw, 3.125rem);
+        font-size: clamp(1rem, -0.0738rem + 5.3691vw, 2.5rem);
         margin-bottom: 4%;
     }
 
@@ -1370,6 +1372,13 @@ h6 {
 
 
 @media (max-width: 1024px) {
+
+    .heading-introduction {
+        transform: translateX(0%);
+
+    }
+
+
 
     .footer-container {
         display: block;
