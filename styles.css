@@ -1,8 +1,88 @@
 @import url("https://use.typekit.net/qym4bov.css");
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Playfair+Display&family=Ubuntu:wght@300&display=swap');
 
-/** font-family: "p22-flw-exhibition", sans-serif;
-font-weight: 700;
-font-style: normal; **/
+:root {
+    --ff-heading1: "Finger Paint", sans-serif;
+    --ff-regular: "Ubuntu", sans-serif;
+    --ff-caveat: 'Caveat', cursive;
+    --ff-heading2: 'p22-flw-exhibition', sans-serif;
+}
+
+/** CSS reset **/
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+li,
+table,
+tr,
+td,
+th,
+article,
+aside,
+figure,
+footer,
+header,
+nav,
+section,
+main {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+nav,
+section,
+main {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+    content: '';
+    content: none;
+}
+
+/** CSS reset end **/
 
 a {
     text-decoration: none;
@@ -18,6 +98,11 @@ main {
     max-width: 100vw;
     margin-top: 12rem;
 }
+
+.main>* {
+    margin-block: 1000px;
+}
+
 
 body.index {
     background:
@@ -81,7 +166,7 @@ header {
 .navlink-li {
     align-self: center;
     color: #ffffff;
-    font: 400 1.25rem "Finger Paint", sans-serif;
+    font: 400 1.25rem var(--ff-heading1);
     list-style: none;
     margin: 0 1rem 0 1rem;
 }
@@ -329,7 +414,7 @@ header {
 .previous-mango-quest-text {
     color: #ffffff;
     text-align: left;
-    font: 400 1.3125rem "Finger Paint", sans-serif;
+    font: 400 1.3125rem var(--ff-heading1);
     width: fit-content;
     color: gold;
 }
@@ -372,14 +457,13 @@ header {
     }
 }
 
-
 .heading-bermuda {
     padding: 2%;
     margin-top: 2%;
     max-width: 29.9375rem;
     width: 95%;
     color: #ffffff;
-    font: 400 1.3125rem "Finger Paint", sans-serif;
+    font: 400 1.3125rem var(--ff-heading1);
     text-align: center;
     color: gold;
 }
@@ -388,7 +472,7 @@ header {
 .previous-mango-quest-text2 {
     margin-top: 0.625rem;
     color: #ffffff;
-    font: 400 1.25rem "Finger Paint", sans-serif;
+    font: 400 1.25rem var(--ff-regular);
     padding: 3% 15% 15% 15%;
 }
 
@@ -401,7 +485,7 @@ header {
 
 .h2-index {
     color: #FFF;
-    font-family: 'Finger Paint';
+    font-family: var(--ff-heading2);
     font-size: 2.5rem;
     font-style: normal;
     font-weight: 400;
@@ -521,10 +605,7 @@ header {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.66) 0%, rgba(0, 0, 0, 0.383) 100%), rgba(211, 211, 211, 0.32) 50% / cover no-repeat;
     color: #FFF;
     text-align: center;
-    font-family: Finger Paint;
-    font-size: 1.5625rem;
-    font-style: normal;
-    font-weight: 400;
+    font: 400 1.5625rem var(--ff-heading1);
     line-height: normal;
     cursor: pointer;
     padding: 0.625rem;
@@ -588,15 +669,11 @@ header {
 .see-all-link {
     color: #000000;
     text-decoration: none;
-    font-weight: 400;
-    font-size: 1rem;
-    font-family: "Finger Paint", sans-serif;
+    font: 400 1rem var(--ff-heading1);
 }
 
 .copyright {
-    font-weight: 400;
-    font-size: 1.125rem;
-    font-family: "Fjord", sans-serif;
+    font: 400 1.125rem var(--ff-regular);
     padding-top: 0.625rem;
     padding-bottom: 0.625rem;
 }
@@ -619,9 +696,7 @@ header {
 }
 
 .follow-us-text {
-    font-weight: 400;
-    font-size: 1.125rem;
-    font-family: "Fjord", sans-serif;
+    font: 400 1.125rem var(--ff-regular);
     margin-right: 0.625rem;
     padding-bottom: 2%;
 }
@@ -671,7 +746,7 @@ header {
 .text-content-about {
     color: #ffffff;
     text-align: left;
-    font: 400 1.125rem/1.6 "Finger Paint", sans-serif;
+    font: 400 1.125rem/1.6 var(--ff-regular);
     width: 95%;
     max-width: 40rem;
     padding: 0 1.25rem 1.25rem 1.25rem;
@@ -702,6 +777,9 @@ header {
 }
 
 .header-frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #000000;
     border-radius: 0 0 1rem 1rem;
     width: 100%;
@@ -755,15 +833,13 @@ header {
 .adventurer-title {
     color: #ffffff;
     font-size: 1.875rem;
-    font-family: "Finger Paint", sans-serif;
-    align-self: center;
+    font-family: var(--ff-regular) align-self: center;
     text-align: center;
 }
 
 .adventurer-bio {
     color: #ffffff;
-    font-size: 1.125rem;
-    font-family: "Finger Paint", sans-serif;
+    font: 400 1.125rem/1.6 var(--ff-regular);
     width: 95%;
     max-width: 40rem;
     margin-bottom: 1vh;
@@ -808,7 +884,9 @@ header {
     text-align: center;
     color: #ffffff;
     text-align: center;
-    font: 400 2rem "p22-flw-exhibition", sans-serif;
+    font: 400 2rem var(--ff-heading2);
+    font-weight: 700;
+    font-style: normal;
     width: 100%;
     max-width: 35rem;
     margin: 0 auto;
@@ -819,17 +897,14 @@ header {
 .mango-description {
     color: #ffffff;
     text-align: left;
-    font: 400 1.125rem "Finger Paint", sans-serif;
+    font: 400 1.125rem/1.6 var(--ff-regular);
     width: 70%;
 }
 
 .contact-h2 {
     color: #FFF;
     text-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
-    font-family: Finger Paint;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 400;
+    font: 400 1.5rem var(--ff-heading1);
     line-height: normal;
 }
 
@@ -843,14 +918,18 @@ header {
 
 #contact-form {
     width: 100%;
+    font: 400 1.125rem var(--ff-regular);
 }
 
 .form-label {
-    font-size: 1rem;
     color: #ffffff;
 }
 
 .form-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.2rem;
     margin: 1rem 0 1rem 0;
     width: 100%;
 }
@@ -872,7 +951,7 @@ header {
 }
 
 .submit-button {
-    font-family: Finger Paint;
+    font-family: var(--ff-regular);
     margin: 0 auto;
     background: #d58131;
     color: #ffffff;
@@ -910,7 +989,7 @@ header {
 .allposts-title {
     color: #FFF;
     text-align: center;
-    font-family: Finger Paint;
+    font-family: var(--ff-heading2);
     font-size: 2.5rem;
     font-style: normal;
     font-weight: 400;
@@ -965,7 +1044,7 @@ header {
 .post-title {
     color: #000000;
     text-align: center;
-    font: 400 1.125rem "Finger Paint", sans-serif;
+    font: 400 1.125rem var(--ff-regular);
     padding: 0.5rem;
 }
 
@@ -1025,7 +1104,7 @@ header {
 
 .tag-filter {
     color: #000000;
-    font: 400 1.125rem "Finger Paint", sans-serif;
+    font: 400 1.125rem var(--ff-regular);
 }
 
 .double-up {
@@ -1066,7 +1145,7 @@ header {
 
 .icon-text {
     margin-left: 0.625rem;
-    font: 400 1rem "Finger Paint", sans-serif;
+    font: 400 1rem var(--ff-regular);
 }
 
 /** blog-post.html css styling **/
@@ -1113,14 +1192,11 @@ h6 {
 
 .post-content p {
     color: #ffffff;
-    font-family: Finger Paint;
-    font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 400;
+    font: 400 1.125rem/1.6 var(--ff-regular);
     line-height: normal;
     margin: 0 auto;
     margin-bottom: 2vh;
-    max-width: 100%;
+    max-width: 90%;
 }
 
 .h1-blogpost {
@@ -1208,16 +1284,16 @@ h6 {
 @media screen and (max-width: 767px) {
 
     main {
-        margin-top: 9rem;
+        margin-top: clamp(8rem, 6.5682rem + 7.1588vw, 10rem);
     }
 
     .mango-logo {
-        width: 3rem;
-        height: 3rem;
+        width: clamp(3rem, 1.5682rem + 7.1588vw, 5rem);
+        height: clamp(3rem, 1.5682rem + 7.1588vw, 5rem);
     }
 
     .mango-title {
-        width: 10rem;
+        width: clamp(10rem, 8.5682rem + 7.1588vw, 12rem);
     }
 
     .menu-toggle {
@@ -1287,7 +1363,9 @@ h6 {
     .form-label,
     .post-title,
     .post-content p,
-    .submit-button {
+    .submit-button,
+    .load-more,
+    .see-all-link {
         font-size: clamp(0.8rem, 0.4786rem + 1.6071vw, 1.25rem);
     }
 
@@ -1358,6 +1436,14 @@ h6 {
     .previous-adventure-image,
     .heading-bermuda {
         border-width: 0.2rem;
+    }
+
+    .button-load-more {
+        width: 50%;
+    }
+
+    .message-box {
+        height: clamp(10rem, 6.4206rem + 17.8971vw, 15rem);
     }
 
 }
