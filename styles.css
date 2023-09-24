@@ -1,3 +1,9 @@
+@import url("https://use.typekit.net/qym4bov.css");
+
+/** font-family: "p22-flw-exhibition", sans-serif;
+font-weight: 700;
+font-style: normal; **/
+
 a {
     text-decoration: none;
 }
@@ -266,6 +272,8 @@ header {
     cursor: pointer;
     transition: box-shadow 0.5s ease, filter 1s ease;
     box-shadow: 0 0 1.25rem rgba(255, 166, 2, 0.4);
+    border: outset rgba(255, 255, 255, 0.257);
+    border-radius: 0.3rem;
 }
 
 .heading-introduction {
@@ -282,9 +290,11 @@ header {
     transition: left 0.5s ease;
     z-index: 1;
     box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-    transform: translateX(2%);
     transition: box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
     box-shadow: 0 0 1.25rem rgba(255, 166, 2, 0.4);
+    border: outset rgba(255, 255, 255, 0.257);
+    transform: translateX(-2%);
 }
 
 .previous-adventure-image {
@@ -296,6 +306,7 @@ header {
 .heading-and-image:hover+.heading-introduction {
     filter: brightness(1.3);
     box-shadow: 0 0 2.5rem rgba(255, 166, 2, 1);
+    transform: rotate(2deg);
 }
 
 .heading-and-image:hover {
@@ -318,6 +329,7 @@ header {
     text-align: left;
     font: 400 1.3125rem "Finger Paint", sans-serif;
     width: fit-content;
+    color: gold;
 }
 
 @keyframes bounceDown {
@@ -365,10 +377,9 @@ header {
     max-width: 29.9375rem;
     width: 95%;
     color: #ffffff;
-    font: var(--adventure-quest, 400 1.25rem "Finger Paint", sans-serif);
+    font: 400 1.3125rem "Finger Paint", sans-serif;
     text-align: center;
-    border: 0.2rem solid gold;
-    border-radius: 0.625rem;
+    color: gold;
 }
 
 
@@ -409,6 +420,7 @@ header {
     overflow: hidden;
     margin: 0 auto;
     padding: 2rem;
+    border: outset rgba(255, 255, 255, 0.257);
 }
 
 .carousel-wrapper {
@@ -777,21 +789,29 @@ header {
 }
 
 .mango-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #000000;
-    border-radius: 1rem;
+    border-radius: 0 0 1rem 1rem;
     width: 100%;
     max-width: 35rem;
     height: auto;
     margin: 0 auto;
 }
 
-.mango-team-image {
-    border-radius: 2rem;
+.mango-team-h1,
+.about-h1,
+.team-h2 {
+    text-align: center;
+    color: #ffffff;
+    text-align: center;
+    font: 400 2rem "p22-flw-exhibition", sans-serif;
     width: 100%;
-    max-width: 30rem;
-    height: auto;
-    display: block;
+    max-width: 35rem;
     margin: 0 auto;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
 }
 
 .mango-description {
@@ -1237,6 +1257,16 @@ h6 {
     h6,
     .previous-mango-quest-text {
         font-size: clamp(0.9rem, 0.6054rem + 1.4732vw, 1.3125rem);
+    }
+
+    .mango-team-h1,
+    .about-h1,
+    .team-h2 {
+        font-size: clamp(1rem, 0.2841rem + 3.5794vw, 2rem);
+        margin-top: clamp(0.8rem, 0.4779rem + 1.6107vw, 1.25rem);
+        margin-bottom: clamp(0.8rem, 0.4779rem + 1.6107vw, 1.25rem);
+        margin-right: 0.2rem;
+        margin-left: 1rem;
     }
 
     .allposts-title {
