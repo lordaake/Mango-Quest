@@ -683,7 +683,7 @@ header {
 
 .about-section {
     background: rgba(28, 28, 27, 0.76);
-    border: 0.3125rem solid #d58131;
+    border: 0.1rem solid #d58131;
     max-width: 60rem;
     width: 90%;
     margin: 0 auto;
@@ -744,7 +744,7 @@ header {
 .adventurer-section {
     margin: 0 auto;
     background: rgba(28, 28, 27, 0.76);
-    border: 0.313rem solid #d48032;
+    border: 0.1rem solid #d48032;
     max-width: 60rem;
     width: 90%;
     padding: 0 2rem 2rem 2rem;
@@ -1013,10 +1013,7 @@ header {
 .single-post:hover {
     transform: scale(1.1);
     transition: transform 0.5s ease;
-}
-
-.single-post:hover .post-title {
-    font-weight: bold;
+    filter: brightness(1.1);
 }
 
 .post-date,
@@ -1029,6 +1026,7 @@ header {
 
 .post-title {
     padding-bottom: 1rem;
+    font: 400 1.125rem var(--ff-heading1);
 }
 
 .button-load-more,
@@ -1380,7 +1378,7 @@ h6 {
 
     .adventurer-section,
     .about-section {
-        max-width: 95%;
+        width: 95%;
         padding: clamp(0.5rem, -0.5738rem + 5.3691vw, 2rem);
         padding-top: 0;
     }
