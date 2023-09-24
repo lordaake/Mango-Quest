@@ -450,7 +450,7 @@ header {
 .previous-mango-quest-text2 {
     margin-top: 0.625rem;
     color: #ffffff;
-    font: 400 1.25rem var(--ff-regular);
+    font: 400 1.25rem/1.6 var(--ff-regular);
     padding: 3% 15% 15% 15%;
 }
 
