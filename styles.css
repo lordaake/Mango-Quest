@@ -265,7 +265,26 @@ header {
     width: 95%;
     cursor: pointer;
     transition: box-shadow 0.5s ease, filter 1s ease;
-    box-shadow: 0 0 1.25rem rgb(255, 166, 2);
+    box-shadow: 0 0 1.25rem rgba(255, 166, 2, 0.4);
+}
+
+.heading-introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #201e1d;
+    border-style: solid;
+    border-color: #ffa702;
+    max-height: 100%;
+    max-width: 33rem;
+    width: 85%;
+    position: relative;
+    transition: left 0.5s ease;
+    z-index: 1;
+    box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    transform: translateX(2%);
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 0 1.25rem rgba(255, 166, 2, 0.4);
 }
 
 .previous-adventure-image {
@@ -299,25 +318,6 @@ header {
     text-align: left;
     font: 400 1.3125rem "Finger Paint", sans-serif;
     width: fit-content;
-}
-
-.heading-introduction {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #201e1d;
-    border-style: solid;
-    border-color: #ffa702;
-    max-height: 100%;
-    max-width: 33rem;
-    width: 85%;
-    position: relative;
-    transition: left 0.5s ease;
-    z-index: 1;
-    box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-    transform: translateX(2%);
-    transition: box-shadow 0.3s ease;
-    box-shadow: 0 0 1.25rem rgb(255, 166, 2);
 }
 
 @keyframes bounceDown {
