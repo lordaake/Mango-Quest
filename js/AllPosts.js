@@ -107,6 +107,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         await loadPosts();
 
         loadMoreButton.addEventListener("click", async function () {
+            page++;
             await loadPosts();
         });
 

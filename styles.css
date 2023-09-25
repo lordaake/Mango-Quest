@@ -87,7 +87,7 @@ main {
 
 body.index {
     background:
-        url('images/background-frontpage.png');
+        url('images/background-frontpage.jpg');
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.9);
     background-blend-mode: darken;
@@ -95,7 +95,7 @@ body.index {
 
 body.all-posts {
     background:
-        url('/images/The-Midnight-Mango-of-Morocco2.png');
+        url('/images/The-Midnight-Mango-of-Morocco2.jpg');
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.9);
     background-blend-mode: darken;
@@ -103,7 +103,7 @@ body.all-posts {
 
 body.blog-post-body {
     background:
-        url('/images/The_Ghost_Mangos_of_Bermuda4.png');
+        url('/images/The_Ghost_Mangos_of_Bermuda4.jpg');
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.962);
     background-blend-mode: darken;
@@ -111,7 +111,7 @@ body.blog-post-body {
 
 body.about-body {
     background:
-        url('/images/background_mango_quest.png');
+        url('/images/background_mango_quest.jpg');
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.733);
     background-blend-mode: darken;
@@ -119,7 +119,7 @@ body.about-body {
 
 body.contact-body {
     background:
-        url('/images/mango_quest_back.png');
+        url('/images/mango_quest_back.jpg');
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.733);
     background-blend-mode: darken;
@@ -686,7 +686,6 @@ header {
     padding: 0.625rem 1.25rem;
     text-align: center;
     margin-bottom: 0.625rem;
-    max-width: 80%;
 }
 
 .see-all-link {
@@ -727,7 +726,7 @@ header {
 /** about.html css code **/
 
 .about-section {
-    background: rgba(28, 28, 27, 0.76);
+    background: rgba(28, 28, 27, 0.85);
     border: 0.1rem solid #d58131;
     max-width: 60rem;
     width: 90%;
