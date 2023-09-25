@@ -50,6 +50,11 @@ document.addEventListener("DOMContentLoaded", async function () {
     });
 
     async function loadPosts(reset = false) {
+        const loader = document.querySelector('.loader');
+        const loadingText = document.querySelector('.loading-text');
+        loader.style.display = 'block';
+        loadingText.style.display = 'block';
+
         if (reset) {
             page = 1;
             fetchedPosts = 0;
@@ -96,6 +101,8 @@ document.addEventListener("DOMContentLoaded", async function () {
             postsWrapper.appendChild(singlePost);
         });
 
+        loader.style.display = 'none';
+        loadingText.style.display = 'none';
         page++;
     }
 

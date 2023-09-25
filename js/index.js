@@ -11,6 +11,11 @@ async function initialize() {
   let currentOffset = 0;
 
   async function fetchAndPopulateCarousel() {
+    const loader = document.querySelector('.loader');
+    const loadingText = document.querySelector('.loading-text');
+    loader.style.display = 'block';
+    loadingText.style.display = 'block';
+
     try {
       const response = await fetch('https://mangoquest.themlmleader.com/wp-json/wp/v2/posts?_embed&per_page=100');
       const posts = await response.json();
@@ -48,6 +53,9 @@ async function initialize() {
     } catch (error) {
       console.error('Error fetching and populating carousel:', error);
     }
+
+    loader.style.display = 'none';
+    loadingText.style.display = 'none';
   }
 
   function updatePosition() {
