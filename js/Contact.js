@@ -43,6 +43,22 @@ document.getElementById("contact-form").addEventListener("submit", function (e) 
     e.preventDefault();
 
     if (validateForm()) {
-        alert("Form submitted successfully!");
+        const submitButton = document.querySelector(".submit-button");
+        submitButton.textContent = "Submitted!";
+        submitButton.disabled = true;
+        const successMessageElement = document.getElementById("success-message");
+        successMessageElement.textContent = "Form submitted successfully!";
+        successMessageElement.style.display = "block";
+
+        setTimeout(function () {
+            submitButton.textContent = "Submit";
+            submitButton.disabled = false;
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("subject").value = "";
+            document.getElementById("message").value = "";
+            successMessageElement.style.display = "none";
+        }, 3000);
+
     }
 });

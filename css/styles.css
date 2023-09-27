@@ -89,7 +89,7 @@ body.index {
     background:
         url('/images/background-frontpage.jpg');
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.95);
     background-blend-mode: darken;
 }
 
@@ -97,7 +97,7 @@ body.all-posts {
     background:
         url('/images/The-Midnight-Mango-of-Morocco2.jpg');
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.95);
     background-blend-mode: darken;
 }
 
@@ -105,7 +105,7 @@ body.blog-post-body {
     background:
         url('/images/The_Ghost_Mangos_of_Bermuda4.jpg');
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.962);
+    background-color: rgba(0, 0, 0, 0.95);
     background-blend-mode: darken;
 }
 
@@ -113,7 +113,7 @@ body.about-body {
     background:
         url('/images/background_mango_quest.jpg');
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.733);
+    background-color: rgba(0, 0, 0, 0.85);
     background-blend-mode: darken;
 }
 
@@ -121,7 +121,7 @@ body.contact-body {
     background:
         url('/images/mango_quest_back.jpg');
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.733);
+    background-color: rgba(0, 0, 0, 0.85);
     background-blend-mode: darken;
 }
 
@@ -170,6 +170,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.mobile-sr {
+    display: none;
 }
 
 .nav-group-center {
@@ -717,6 +721,10 @@ header {
     color: #ffffff;
 }
 
+.socialmedia-p {
+    display: none;
+}
+
 .follow-us-text {
     font: 400 1.125rem var(--ff-regular);
     margin-right: 0.625rem;
@@ -939,8 +947,12 @@ header {
 }
 
 #contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
     font: 400 1.125rem var(--ff-regular);
+    position: relative;
 }
 
 .form-label {
@@ -973,14 +985,13 @@ header {
 }
 
 .submit-button {
-    font-family: var(--ff-regular);
-    margin: 0 auto;
+    align-self: flex-start;
+    font: 400 1.125rem var(--ff-regular);
     background: #d58131;
     color: #ffffff;
     border: none;
     border-radius: 1rem;
     padding: 0.625rem 1.25rem;
-    font-size: 1rem;
     cursor: pointer;
     width: 30%;
     border-radius: 0.625rem;
@@ -992,6 +1003,20 @@ header {
 
 .message-box {
     height: 15rem;
+}
+
+#success-message {
+    display: none;
+    font: 400 1.125rem var(--ff-regular);
+    align-self: center;
+    width: fit-content;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+    text-align: center;
+    z-index: 100;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
 }
 
 /** allposts.html css styling **/

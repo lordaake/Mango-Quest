@@ -1,12 +1,24 @@
 document.addEventListener("DOMContentLoaded", init);
 
 async function init() {
-  const postId = getPostId();
-  const post = await fetchPostData(postId);
+  const loader = document.querySelector('.loader');
+  const loadingText = document.querySelector('.loading-text');
 
-  populateBlogSection(post);
+  try {
+    loader.style.display = 'block';
+    loadingText.style.display = 'block';
 
-  setupImageModal();
+    const postId = getPostId();
+    const post = await fetchPostData(postId);
+
+    populateBlogSection(post);
+    setupImageModal();
+  } catch (error) {
+    console.error('Error during initialization: ', error);
+  } finally {
+    loader.style.display = 'none';
+    loadingText.style.display = 'none';
+  }
 }
 
 function getPostId() {
@@ -31,7 +43,6 @@ function populateBlogSection(post) {
   `;
 
   document.title = title.rendered;
-
   setupImageModal();
 }
 
@@ -51,11 +62,20 @@ function setupImageModal() {
       modal.style.display = 'flex';
       modal.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
       modalImage.src = this.src;
+      modalImage.alt = this.alt;
     });
   });
 
   window.addEventListener('click', function (event) {
     if (event.target === modal) {
+      closeModal();
+    }
+
+  });
+
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
       closeModal();
     }
   });

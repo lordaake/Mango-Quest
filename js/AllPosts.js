@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", async function () {
     const loader = document.querySelector('.loader');
     const loadingText = document.querySelector('.loading-text');
-
     loader.style.display = 'block';
     loadingText.style.display = 'block';
 
@@ -82,8 +81,11 @@ document.addEventListener("DOMContentLoaded", async function () {
 
                 const imgElement = document.createElement("img");
                 const featuredImage = post._embedded["wp:featuredmedia"][0].source_url;
+                const altText = post._embedded["wp:featuredmedia"][0].alt_text || post.title.rendered;
                 imgElement.src = featuredImage;
+                imgElement.alt = altText;
                 imgElement.className = "post-image";
+
 
                 imgElement.addEventListener("click", function () {
                     window.location.href = `blog-post.html?id=${post.id}`;
