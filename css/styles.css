@@ -980,8 +980,9 @@ header {
 }
 
 .error-text {
-    color: red;
+    color: rgb(253, 225, 225);
     font-size: 0.875rem;
+    padding: 0.3rem;
 }
 
 .submit-button {
@@ -1534,8 +1535,6 @@ h6 {
         transform: translateX(0%);
 
     }
-
-
 
     .footer-container {
         display: block;

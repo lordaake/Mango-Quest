@@ -9,6 +9,9 @@ function validateForm() {
     document.getElementById("subject-error").textContent = "";
     document.getElementById("message-error").textContent = "";
 
+    const errorElements = document.querySelectorAll(".error-text");
+    errorElements.forEach((element) => (element.textContent = ""));
+
     let isValid = true;
 
     if (name.length <= 5) {
