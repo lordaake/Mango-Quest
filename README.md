@@ -12,9 +12,8 @@ Mango Quest began as an idea to share the beauty and variety of mangoes discover
 
 - A simple and user-friendly design.
 - Prototype creation in Figma for a quicker development start.
-- Challenges encountered during JavaScript implementation and how they were resolved.
 - Adherence to WCAG guidelines and SEO optimization.
-- Feedback from testers to enhance the user experience.
+- Feedback from testers were listened to and implemented to enhance the user experience.
 
 ## Built With
 
