@@ -31,12 +31,8 @@ To get started with Mango Quest, follow these steps:
 1. Clone the repo:
 git clone https://github.com/Noroff-FEU-Assignments/project-exam-1-lordaake.git
 
-Install the dependencies:
-npm install
-
 ## Running
-To run the app, use the following command:
-npm run start
+To access the Mango Quest website, visit the [deployed](https://mango-quest.netlify.app/) site.
 
 ## Contributing
 Contributions to Mango Quest are welcome. Please feel free to open pull requests with your proposed changes or enhancements.
