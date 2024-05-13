@@ -17,8 +17,8 @@ document.addEventListener("DOMContentLoaded", async function () {
         let selectedTagIds = [];
 
         const [totalResponse, tags] = await Promise.all([
-            fetch("https://mangoquest.themlmleader.com/wp-json/wp/v2/posts"),
-            fetch("https://mangoquest.themlmleader.com/wp-json/wp/v2/tags").then(response => response.json())
+            fetch("http://mangoquest.tordlarsson.org/wp-json/wp/v2/posts"),
+            fetch("http://mangoquest.tordlarsson.org/wp-json/wp/v2/tags").then(response => response.json())
         ]);
 
         totalPosts = parseInt(totalResponse.headers.get('X-WP-Total'));
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                 postsWrapper.innerHTML = '';
             }
 
-            let url = `https://mangoquest.themlmleader.com/wp-json/wp/v2/posts?_embed&per_page=6&page=${page}`;
+            let url = `http://mangoquest.tordlarsson.org/wp-json/wp/v2/posts?_embed&per_page=6&page=${page}`;
             if (selectedTagIds.length > 0) url += '&tags=' + selectedTagIds.join(',');
 
             const response = await fetch(url);
