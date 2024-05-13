@@ -17,7 +17,7 @@ async function initialize() {
     loadingText.style.display = 'block';
 
     try {
-      const response = await fetch('http://mangoquest.tordlarsson.org/wp-json/wp/v2/posts?_embed&per_page=100');
+      const response = await fetch('https://mangoquest.tordlarsson.org/wp-json/wp/v2/posts?_embed&per_page=100');
       const posts = await response.json();
 
       while (carousel.firstChild) {
