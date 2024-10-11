@@ -27,7 +27,7 @@ function getPostId() {
 }
 
 async function fetchPostData(postId) {
-  const response = await fetch(`https://mangoquest.tordlarsson.org/wp-json/wp/v2/posts/${postId}?_embed`);
+  const response = await fetch(`https://mangoquest.tordlarsson.com/wp-json/wp/v2/posts/${postId}?_embed`);
   return response.json();
 }
 
